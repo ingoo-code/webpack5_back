@@ -9,7 +9,13 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/api',(req,res)=>{
-    res.send('hello api')
+    res.json(
+        [
+            {userid: "web7722", content: '#서버', date: "2021-07-10" },
+            {userid: "web7722", content: '#성공적', date: "2021-07-10" },
+            {userid: "web7722", content: '#힘듬..', date: "2021-07-10" },
+        ]
+    )
 })
 
 app.listen(3000,()=>{
